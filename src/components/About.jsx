@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './Nav.css'
-import HomePic from '../Images/HomePic.png'
+// import HomePic from '../Images/HomePic.png'
 import { FaUniversity, FaGraduationCap, FaUserTie, FaMicroscope, FaBook } from 'react-icons/fa'
 import { FaPeopleGroup } from "react-icons/fa6";
+
+import lab1 from '../Images/lab1.jpg';
 
 
 const About = () => {
@@ -36,14 +38,14 @@ const About = () => {
         <div className="about-top-section">
           <div className="about-image">
             <img 
-              src={HomePic}
-              alt="Ruchi Chavala"
+              src={lab1}
+              alt="Ruchi Chawla"
               className="about-img"
             />
           </div>
           <div className="about-text">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2>About Lab</h2>
+            <p>Our lab at the Department of Pharmaceutical Engineering & Technology, IIT(BHU), Varanasi, focuses on applying nanotechnology to solve critical health problems. We design and evaluate advanced drug delivery systems, such as nanocarriers and nanoscaffolds, primarily targeting treatments for diseases like Alzheimer's and lung cancer. Our research translates pharmaceutical innovations into potential therapeutic applications.</p>
           </div>
         </div>
         

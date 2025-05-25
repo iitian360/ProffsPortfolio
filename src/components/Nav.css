@@ -1,5 +1,5 @@
 .navbar {
-  background: transparent;
+  background-color: transparent !important;
   padding: 1rem 0;
   position: -webkit-sticky;
   position: sticky;
@@ -7,7 +7,7 @@
   z-index: 1000;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
   width: 100%;
   overflow-x: hidden;
 }
@@ -40,7 +40,7 @@
   color: transparent;
   position: relative;
   display: inline-block;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .fancy-name {
@@ -55,7 +55,7 @@
 .first-name {
   font-size: 3.5rem;
   font-weight: 800;
-  background-color: black;
+  background-color: white;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -142,7 +142,7 @@
 
 .nav-link:hover {
   color: #61dafb;
-} 
+}
 
 /* home section */
 .main-container {
@@ -152,18 +152,156 @@
 .home_section {
   width: 100%;
   height: 100vh;
-  background-image: url('../Images/background.png');
+  background-image: url('../Images/background2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  box-sizing: border-box;
+  /* padding: 2rem; */
+  /* box-sizing: border-box; */
+  /* background-color: rgba(49, 47, 47, 0.489); */
 }
 
-#about, #acedamics, #research, #contact {
+.home__layer {
+  width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.795);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+
+.content_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profilePic {
+  flex-shrink: 0;
+}
+
+.profilePic img {
+  width: 300px;       /* Adjust based on image clarity */
+  height: auto;
+  border-radius: 12px; /* Optional: rounded corners */
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Professional look */
+}
+
+
+.know-more-btn {
+  /* margin-top: 15px; */
+  /* padding: 10px 16px; */
+  background-color:transparent;
+  color:black;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.know-more-btn:hover {
+  color:#1d4ed8;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:2999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius:1px;
+  border-top: 20px solid #1d4ed8;
+  width: 100%;
+  margin-top: 50px;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.modal-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.modal-content th, .modal-content td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.modal-content th {
+  background: #f0f0f0;
+  font-weight: 600;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-content {
+    padding: 16px;
+  }
+
+  .modal-content table th, .modal-content table td {
+    font-size: 0.85rem;
+  }
+}
+.awards-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.awards-list li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+  text-align: start;
+}
+
+
+
+#about,
+#acedamics,
+#research,
+#contact {
   transition: all 0.8s ease;
 }
 
@@ -188,6 +326,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -248,7 +387,8 @@
 .text_section {
   width: 60%;
   text-align: left;
-  color: black;
+  color:white;
+  /* background-color: white; */
   box-sizing: border-box;
 }
 
@@ -258,16 +398,20 @@
   word-wrap: break-word;
 }
 
+.name-text{
+  color: white;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 1024px) {
   .home_container {
     gap: 2rem;
   }
-  
+
   .content_wrapper {
     gap: 2rem;
   }
-  
+
   .first-name {
     font-size: 3rem;
   }
@@ -278,29 +422,29 @@
     flex-direction: column;
     text-align: center;
   }
-  
+
   .welcome_image {
     width: 60%;
     max-width: 350px;
   }
-  
+
   .text_section {
     width: 100%;
     text-align: center;
   }
-  
+
   .fancy-name {
     align-items: center;
   }
-  
+
   .first-name {
     font-size: 2.5rem;
   }
-  
+
   .social-icons {
     justify-content: center;
   }
-  
+
   .text_section p {
     font-size: 1rem;
   }
@@ -310,25 +454,25 @@
   .home_section {
     padding: 1rem;
   }
-  
+
   .welcome_image {
     width: 80%;
   }
-  
+
   .first-name {
     font-size: 2rem;
   }
-  
+
   .social-icon {
     width: 35px;
     height: 35px;
   }
-  
+
   .social-icon svg {
     width: 18px;
     height: 18px;
   }
-  
+
   .logo-text {
     font-size: 1.5rem;
   }
@@ -339,7 +483,14 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  background-image: url('../Images/background.png');
+  /* background-image: url('../Images/background.jpg'); */
+  background: #757F9A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D7DDE8, #757F9A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -351,7 +502,7 @@
   align-items: center;
   gap: 4rem;
   margin-bottom: 3rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color:white;
   padding: 2rem;
   border-radius: 15px;
   flex-direction: row-reverse;
@@ -360,10 +511,10 @@
 .about-image {
   width: 30%;
   min-width: 250px;
-  background-color: orange;
-  padding: 1rem;
+  /* background-color: orange; */
+  /* padding: 1rem; */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .about-img {
@@ -467,7 +618,7 @@
   line-height: 1.4;
 }
 
-.about-content{
+.about-content {
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
@@ -551,7 +702,7 @@
 }
 
 .publication-title {
-  font-size:15px;
+  font-size: 15px;
   font-weight: 600;
   /* text-align: start; */
   margin-left: 15px;
@@ -569,23 +720,25 @@
   display: inline-block;
   margin-top: 10px;
   padding: 8px 16px;
-  background-color:transparent;
+  background-color: transparent;
   color: violet;
   text-decoration: none;
   border-radius: 6px;
   font-size: 0.9rem;
-  
+
   transition: background-color 0.3s ease;
 }
 
 .publication-btn:hover {
   color: red;
 }
-.publication-author{
+
+.publication-author {
   font-weight: 800;
   /* text-decoration: underline; */
 }
-.publication-date{
+
+.publication-date {
   font-weight: 400;
   /* text-decoration: none !important; */
   font-size: 13px;
@@ -594,7 +747,7 @@
 
 /* research */
 
-.research-container{
+.research-container {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -612,7 +765,8 @@
   justify-content: space-around;
   gap: 20px;
   padding: 20px;
-  flex-wrap: wrap; /* makes it responsive */
+  flex-wrap: wrap;
+  /* makes it responsive */
 }
 
 .contact-card {
@@ -655,7 +809,7 @@
 }
 
 .card-button:hover {
-  background-color:orangered;
+  background-color: orangered;
 }
 
 /* Responsive adjustments */
@@ -687,7 +841,7 @@
 .footer-section {
   flex: 1 1 250px;
   margin-bottom: 20px;
-  
+
 }
 
 .footer-section h4 {
@@ -745,7 +899,7 @@
 
 
 .footer-bottom {
-  background-color:orange;
+  background-color: orange;
   text-align: center;
   padding: 18px 10px;
   font-size: 0.95rem;
@@ -786,7 +940,7 @@
 }
 
 @media (max-width: 540px) {
-  .research-page-container{
+  .research-page-container {
     width: 100%;
     background-color: red !important;
     padding: 3px;
@@ -856,8 +1010,3 @@
   margin-top: 0.5rem;
   font-size: 0.875rem;
 }
-
-
-
-
-

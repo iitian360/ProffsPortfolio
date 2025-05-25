@@ -12,7 +12,7 @@ const ContactCards = () => {
         </div>
         <div className="text">
           <h3>Email</h3>
-          <p>contact@example.com</p>
+          <p>rchawla.phe@iitbhu.ac.in</p>
         </div>
       </div>
 
@@ -22,7 +22,7 @@ const ContactCards = () => {
         </div>
         <div className="text">
           <h3>Phone</h3>
-          <p>+91 9876543210</p>
+          <p>+91 9336077707</p>
         </div>
         <button className="card-button">Call Now</button>
       </div>

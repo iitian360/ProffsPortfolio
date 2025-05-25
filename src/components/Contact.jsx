@@ -39,7 +39,7 @@ const Contact = () => {
           <div className="about-image">
             <img 
               src={HomePic}
-              alt="Ruchi Chavala"
+              alt="Ruchi Chawla"
               className="about-img"
             />
           </div>
