@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Nav.css";
 import pub1 from "../Images/pub1.jpg";
 import { publicationsData } from "../assets/Data.js"; // adjust the path if needed
-import mainImg from "../Images/HomePic.png";
+import mainImg from "../Images/proff.jpg";
 import { FaInstagram, FaFacebook, FaGoogle, FaTwitter } from "react-icons/fa";
 
 const Acedamics = () => {
@@ -88,13 +88,13 @@ const Acedamics = () => {
                 <img src={mainImg} alt={pub.title} />
                 <div className="publication-meta">
                   <p className="publication-author">
-                    By {pub.author}{" "}
+                    {pub.author}{" "}
                     <span className="publication-date">{pub.date}</span>{" "}
                   </p>
                 </div>
               </div>
 
-              <h3 className="publication-title">{pub.title}</h3>
+              {/* <h3 className="publication-title">{pub.title}</h3> */}
               <p className="publication-desc">{pub.desc}</p>
               <a
                 href={pub.link}

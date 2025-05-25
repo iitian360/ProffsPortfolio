@@ -1,36 +1,26 @@
 import React from 'react';
-import teamPic from '../Images/HomePic.png'
+import Ajay from '../Images/Ajay.jpg'
+import Mohini from '../Images/Mohini.jpg'
+import dummy from '../Images/1000116076.jpg'
 const teamMembers = [
   {
-    name: 'Dr. Alice Johnson',
-    role: 'Postdoctoral Fellow',
+    name: 'Ajay Panday',
+    role: 'PhD Research Scholar',
     bio: 'Working on machine learning applications in bioinformatics.',
-    image: teamPic,
+    image: Ajay,
   },
   {
-    name: 'John Smith',
-    role: 'PhD Student',
+    name: 'Mohini Milmile',
+    role: 'PhD Research Scholar',
     bio: 'Researching neural networks for image classification.',
-    image: teamPic
+    image: Mohini
   },
   {
     name: 'Sara Lee',
-    role: 'M.Tech Student',
+    role: 'PhD Research Scholar',
     bio: 'Focusing on data visualization techniques.',
-    image: teamPic
+    image: dummy
   },
-  {
-    name: 'Sunil Verma',
-    role: 'M.Tech Student',
-    bio: 'Focusing on data visualization techniques.',
-    image: teamPic
-  },
-  {
-    name: 'Mahesh Kandoi',
-    role: 'MBA Student',
-    bio: 'Focusing on data visualization techniques.',
-    image: teamPic
-  }
 ];
 
 const OurTeam = () => {

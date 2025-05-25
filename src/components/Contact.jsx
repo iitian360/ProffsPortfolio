@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Nav.css'
-import HomePic from '../Images/HomePic.png'
+import HomePic from '../Images/proff.jpg'
 import ContactCards from './ContactCard';
 
 const Contact = () => {

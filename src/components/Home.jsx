@@ -148,7 +148,7 @@ const Home = () => {
             <button className="close-button" onClick={toggleModal}>
               ×
             </button>
-            <h2>Academic Career & Professional Attainments</h2>
+            <h2 style={{borderBottom:"2px solid #6161c2"}}>Academic Career & Professional Attainments</h2>
             <table>
               <thead>
                 <tr>
@@ -176,7 +176,7 @@ const Home = () => {
               </tbody>
             </table>
 
-            <h2 style={{ marginTop: "20px" }}>Positions Held</h2>
+            <h2 style={{ marginTop: "20px", borderBottom:"2px solid #6161c2" }}>Positions Held</h2>
             <table>
               <thead>
                 <tr>
